@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		03521A8A2B348C4D002A32EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03521A892B348C4D002A32EA /* main.m */; };
+		03E840C82B3DD0B90067AD67 /* Doctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E840C72B3DD0B90067AD67 /* Doctor.m */; };
+		03E840CB2B3DD0EA0067AD67 /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E840CA2B3DD0EA0067AD67 /* Patient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,11 @@
 /* Begin PBXFileReference section */
 		03521A862B348C4D002A32EA /* Objective-C */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Objective-C"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03521A892B348C4D002A32EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		03E840C62B3DD0B90067AD67 /* Doctor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Doctor.h; sourceTree = "<group>"; };
+		03E840C72B3DD0B90067AD67 /* Doctor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Doctor.m; sourceTree = "<group>"; };
+		03E840C92B3DD0EA0067AD67 /* Patient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Patient.h; sourceTree = "<group>"; };
+		03E840CA2B3DD0EA0067AD67 /* Patient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Patient.m; sourceTree = "<group>"; };
+		03E840CC2B3DD2C80067AD67 /* DoctorDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoctorDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,11 @@
 			isa = PBXGroup;
 			children = (
 				03521A892B348C4D002A32EA /* main.m */,
+				03E840CC2B3DD2C80067AD67 /* DoctorDelegate.h */,
+				03E840C62B3DD0B90067AD67 /* Doctor.h */,
+				03E840C72B3DD0B90067AD67 /* Doctor.m */,
+				03E840C92B3DD0EA0067AD67 /* Patient.h */,
+				03E840CA2B3DD0EA0067AD67 /* Patient.m */,
 			);
 			path = "Objective-C";
 			sourceTree = "<group>";
@@ -119,6 +131,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03E840CB2B3DD0EA0067AD67 /* Patient.m in Sources */,
+				03E840C82B3DD0B90067AD67 /* Doctor.m in Sources */,
 				03521A8A2B348C4D002A32EA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,6 +261,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 27HNUHGL83;
 				ENABLE_HARDENED_RUNTIME = YES;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "gmail.com-mihail.chertov";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -257,6 +272,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 27HNUHGL83;
 				ENABLE_HARDENED_RUNTIME = YES;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "gmail.com-mihail.chertov";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
