@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		03521A8A2B348C4D002A32EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03521A892B348C4D002A32EA /* main.m */; };
+		038196B02B507515000F7B60 /* Robot.m in Sources */ = {isa = PBXBuildFile; fileRef = 038196AF2B507515000F7B60 /* Robot.m */; };
 		03E840C82B3DD0B90067AD67 /* Doctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E840C72B3DD0B90067AD67 /* Doctor.m */; };
 		03E840CB2B3DD0EA0067AD67 /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E840CA2B3DD0EA0067AD67 /* Patient.m */; };
 /* End PBXBuildFile section */
@@ -27,6 +28,8 @@
 /* Begin PBXFileReference section */
 		03521A862B348C4D002A32EA /* Objective-C */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Objective-C"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03521A892B348C4D002A32EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		038196AE2B507515000F7B60 /* Robot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Robot.h; sourceTree = "<group>"; };
+		038196AF2B507515000F7B60 /* Robot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Robot.m; sourceTree = "<group>"; };
 		03E840C62B3DD0B90067AD67 /* Doctor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Doctor.h; sourceTree = "<group>"; };
 		03E840C72B3DD0B90067AD67 /* Doctor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Doctor.m; sourceTree = "<group>"; };
 		03E840C92B3DD0EA0067AD67 /* Patient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Patient.h; sourceTree = "<group>"; };
@@ -64,14 +67,32 @@
 		03521A882B348C4D002A32EA /* Objective-C */ = {
 			isa = PBXGroup;
 			children = (
+				038196A32B503972000F7B60 /* HW-3 */,
+				038196A22B503966000F7B60 /* HW-4 */,
 				03521A892B348C4D002A32EA /* main.m */,
+			);
+			path = "Objective-C";
+			sourceTree = "<group>";
+		};
+		038196A22B503966000F7B60 /* HW-4 */ = {
+			isa = PBXGroup;
+			children = (
+				038196AE2B507515000F7B60 /* Robot.h */,
+				038196AF2B507515000F7B60 /* Robot.m */,
+			);
+			path = "HW-4";
+			sourceTree = "<group>";
+		};
+		038196A32B503972000F7B60 /* HW-3 */ = {
+			isa = PBXGroup;
+			children = (
 				03E840CC2B3DD2C80067AD67 /* DoctorDelegate.h */,
 				03E840C62B3DD0B90067AD67 /* Doctor.h */,
 				03E840C72B3DD0B90067AD67 /* Doctor.m */,
 				03E840C92B3DD0EA0067AD67 /* Patient.h */,
 				03E840CA2B3DD0EA0067AD67 /* Patient.m */,
 			);
-			path = "Objective-C";
+			path = "HW-3";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +126,7 @@
 				TargetAttributes = {
 					03521A852B348C4D002A32EA = {
 						CreatedOnToolsVersion = 15.1;
+						LastSwiftMigration = 1510;
 					};
 				};
 			};
@@ -131,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				038196B02B507515000F7B60 /* Robot.m in Sources */,
 				03E840CB2B3DD0EA0067AD67 /* Patient.m in Sources */,
 				03E840C82B3DD0B90067AD67 /* Doctor.m in Sources */,
 				03521A8A2B348C4D002A32EA /* main.m in Sources */,
@@ -258,22 +281,29 @@
 		03521A8E2B348C4D002A32EA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 27HNUHGL83;
 				ENABLE_HARDENED_RUNTIME = YES;
 				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "gmail.com-mihail.chertov";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Objective-C/Objective-C-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		03521A8F2B348C4D002A32EA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 27HNUHGL83;
 				ENABLE_HARDENED_RUNTIME = YES;
 				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "gmail.com-mihail.chertov";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Objective-C/Objective-C-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

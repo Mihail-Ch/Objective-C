@@ -7,16 +7,25 @@
 
 
 #import <Foundation/Foundation.h>
-#import "Doctor.h"
-#import "Patient.h"
+#import "Robot.h"
 
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        Doctor *doctor = [Doctor new];
-        Patient *patient = [Patient new];
-        doctor.delegate = patient;
-        [doctor prescribeMedication];
+        Robot *robot = [[Robot alloc] init];
+        
+        [robot run:@"up"];
+        NSLog(@"Current position: (%ld, %ld)", robot.x, robot.y);
+        
+        [robot run:@"right"];
+        NSLog(@"Current position: (%ld, %ld)", robot.x, robot.y);
+        
+        [robot run:@"down"];
+        NSLog(@"Current position: (%ld, %ld)", robot.x, robot.y);
+        
+        [robot run:@"left"];
+        NSLog(@"Current position: (%ld, %ld)", robot.x, robot.y);
+        
     }
     return 0;
 }
