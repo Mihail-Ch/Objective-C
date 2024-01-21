@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		03521A8A2B348C4D002A32EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03521A892B348C4D002A32EA /* main.m */; };
 		038196B02B507515000F7B60 /* Robot.m in Sources */ = {isa = PBXBuildFile; fileRef = 038196AF2B507515000F7B60 /* Robot.m */; };
+		03DDA1172B5BF771005C053F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DDA1162B5BF771005C053F /* ViewController.m */; };
 		03E840C82B3DD0B90067AD67 /* Doctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E840C72B3DD0B90067AD67 /* Doctor.m */; };
 		03E840CB2B3DD0EA0067AD67 /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E840CA2B3DD0EA0067AD67 /* Patient.m */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,8 @@
 		03521A892B348C4D002A32EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		038196AE2B507515000F7B60 /* Robot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Robot.h; sourceTree = "<group>"; };
 		038196AF2B507515000F7B60 /* Robot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Robot.m; sourceTree = "<group>"; };
+		03DDA1152B5BF771005C053F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		03DDA1162B5BF771005C053F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		03E840C62B3DD0B90067AD67 /* Doctor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Doctor.h; sourceTree = "<group>"; };
 		03E840C72B3DD0B90067AD67 /* Doctor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Doctor.m; sourceTree = "<group>"; };
 		03E840C92B3DD0EA0067AD67 /* Patient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Patient.h; sourceTree = "<group>"; };
@@ -68,19 +71,21 @@
 			isa = PBXGroup;
 			children = (
 				038196A32B503972000F7B60 /* HW-3 */,
-				038196A22B503966000F7B60 /* HW-4 */,
+				038196A22B503966000F7B60 /* Robot */,
 				03521A892B348C4D002A32EA /* main.m */,
 			);
 			path = "Objective-C";
 			sourceTree = "<group>";
 		};
-		038196A22B503966000F7B60 /* HW-4 */ = {
+		038196A22B503966000F7B60 /* Robot */ = {
 			isa = PBXGroup;
 			children = (
 				038196AE2B507515000F7B60 /* Robot.h */,
 				038196AF2B507515000F7B60 /* Robot.m */,
+				03DDA1152B5BF771005C053F /* ViewController.h */,
+				03DDA1162B5BF771005C053F /* ViewController.m */,
 			);
-			path = "HW-4";
+			path = Robot;
 			sourceTree = "<group>";
 		};
 		038196A32B503972000F7B60 /* HW-3 */ = {
@@ -157,6 +162,7 @@
 				03E840CB2B3DD0EA0067AD67 /* Patient.m in Sources */,
 				03E840C82B3DD0B90067AD67 /* Doctor.m in Sources */,
 				03521A8A2B348C4D002A32EA /* main.m in Sources */,
+				03DDA1172B5BF771005C053F /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
